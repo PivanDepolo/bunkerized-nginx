@@ -1,24 +1,29 @@
-<html>
-	<head>
-		<title>Website protection</title>
-		<style>
-			body {
-				background-color: #1d70b7;
-			}
-			.centered {
-				position: fixed;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="centered" style="color: white;">
-			<h1>As a security measure, we ask you to complete this captcha to access our website :</h1>
-			%CAPTCHA%
-			<div>&#128737;&#65039; this website is protected with <a href="https://github.com/bunkerity/bunkerized-nginx" target="_blank">bunkerized-nginx</a> &#128737;&#65039;</div>
-		</div>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website protection</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <!-- Custom stlylesheet -->
+    <style>*{-webkit-box-sizing:border-box;box-sizing:border-box}body{padding:0;margin:0;background-color:#222222;}#notfound{position:relative;height:100vh;background-color:#222}#notfound .notfound{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.notfound{width:100%;text-align:center;line-height:1.4}.notfound .notfound-404{height:158px;line-height:153px}.notfound .notfound-404 h1{font-family:'Josefin Sans',sans-serif;color:#222;font-size:220px;letter-spacing:10px;margin:0;font-weight:700;text-shadow:2px 2px 0 #c9c9c9,-2px -2px 0 #c9c9c9}.notfound .notfound-404 h1>span{text-shadow:2px 2px 0 #ffab00,-2px -2px 0 #ffab00,0 0 8px #ff8700}.notfound p{font-family:'Josefin Sans',sans-serif;color:#c9c9c9;font-size:22px;font-weight:400;margin-top:0;margin-bottom:15px}.notfound a{font-family:'Josefin Sans',sans-serif;font-size:14px;text-decoration:none;text-transform:uppercase;background:0 0;color:#c9c9c9;border:2px solid #c9c9c9;display:inline-block;padding:10px 25px;font-weight:700;-webkit-transition:.2s all;transition:.2s all}.notfound a:hover{color:#ffab00;border-color:#ffab00}@media only screen and (max-width:480px){.notfound .notfound-404{height:100%;line-height:122px}.notfound .notfound-404 h1{font-size:122px}}</style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <p>As a security measure, we ask you to complete this captcha to access our website:</p>
+            </div>
+            <p>%CAPTCHA%</p>
+        </div>
+    </div>
+</body>
 </html>
